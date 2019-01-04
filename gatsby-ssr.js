@@ -1,10 +1,12 @@
-const React = require("react")
+"use strict";
 
-exports.onRenderBody = ({ setPostBodyComponents },pluginOptions) => {
-  if (process.env.NODE_ENV === `production`) {
-    const components = [
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/commercelayer@1.5.5/dist/commercelayer.min.js"></script>
-    ]
-    return setPostBodyComponents(components)
+var React = require("react");
+
+exports.onRenderBody = function (_ref, pluginOptions) {
+  var setPostBodyComponents = _ref.setPostBodyComponents;
+
+  if (process.env.NODE_ENV === "production") {
+    var components = [React.createElement("script", { type: "text/javascript", src: "https://cdn.jsdelivr.net/npm/commercelayer@1.5.5/dist/commercelayer.min.js" })];
+    return setPostBodyComponents(components);
   }
-}
+};
