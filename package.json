@@ -1,0 +1,25 @@
+{
+  "name": "gatsby-plugin-commercelayer",
+  "version": "1.0.0",
+  "description": "The Official Commerce Layer Integration Plugin for Gatsby",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commercelayer/gatsby-plugin-commercelayer.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "commercelayer",
+    "jamstack",
+    "ecommerce"
+  ],
+  "author": "Filippo Conforti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/commercelayer/gatsby-plugin-commercelayer/issues"
+  },
+  "homepage": "https://github.com/commercelayer/gatsby-plugin-commercelayer#readme",
+  "dependencies": {
+    "commercelayer-react": "^1.1.0"
+  }
+}
