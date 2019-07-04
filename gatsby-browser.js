@@ -1,5 +1,5 @@
 const scriptSource =
-  'https://cdn.jsdelivr.net/npm/commercelayer@1.9.6/dist/commercelayer.min.js'
+  'https://cdn.jsdelivr.net/npm/commercelayer@1.9.10/dist/commercelayer.min.js'
 
 const injectCommerceLayerScript = () => {
   const script = document.createElement('script')
@@ -16,10 +16,18 @@ const checkCommerceLayerTag = () => {
   return false
 }
 
-exports.onRouteUpdate = () => {
+const initOrInjectCommerceLayer = () => {
   if (window.commercelayer && typeof window.commercelayer.init === `function`) {
     window.commercelayer.init()
   } else if (!checkCommerceLayerTag()) {
     injectCommerceLayerScript()
   }
+}
+
+exports.onInitialClientRender = () => {
+  initOrInjectCommerceLayer()
+}
+
+exports.onRouteUpdate = () => {
+  initOrInjectCommerceLayer()
 }
