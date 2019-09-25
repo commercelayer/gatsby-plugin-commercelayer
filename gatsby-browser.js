@@ -1,5 +1,5 @@
 const scriptSource =
-  'https://cdn.jsdelivr.net/npm/commercelayer@1.9.10/dist/commercelayer.min.js'
+  'https://cdn.jsdelivr.net/npm/commercelayer@1.9.14/dist/commercelayer.min.js'
 
 const injectCommerceLayerScript = () => {
   const script = document.createElement('script')
