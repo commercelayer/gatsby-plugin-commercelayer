@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-commercelayer",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "The Official Commerce Layer Integration Plugin for Gatsby",
   "main": "index.js",
   "repository": {
