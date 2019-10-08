@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/commercelayer/gatsby-plugin-commercelayer#readme",
   "dependencies": {
-    "commercelayer-react": "^1.2.3",
-    "gatsby-cli": "^2.7.55"
+    "commercelayer-react": "^1.2.4",
+    "gatsby-cli": "^2.7.56"
   }
 }
